@@ -1,0 +1,32 @@
+{
+    "provenance" : {
+        "nama_berkas": "data_kunjungan_wisata_kabupaten_bandung-16-nov-26.csv",
+        "lokasi_berkas": "data/raw/data_kunjungan_wisata_kabupaten_bandung-16-nov-26.csv",
+        "ukuran_berkas_byte": "198KB",
+        "hash_md5": "2a8848a399ba5e821399c5a244775a71",
+        "sumber": "Satu Data Kabupaten Bandung",
+        "penerbit": "Pemerintah Kabupaten Bandung (kode sumber pada endpoint: DISPAREKRAF; nama resmi perangkat daerah perlu diverifikasi pada portal)",
+        "url": "https://satudata.bandungkab.go.id/api/dataset/DISPAREKRAF/jumlah-wisatawan",
+        "lisensi": "Belum diverifikasi. Periksa ketentuan penggunaan/lisensi pada halaman dataset atau portal sebelum pengumpulan.",
+        "waktu_akuisisi": "2026-11-16T22:24:00+08:00",
+        "pengambil": {
+            "nama": "I Made Dio Kartiana Putra",
+            "nim": "2501010142"
+        },
+        "metode_akuisisi": {
+            "jenis": "ENDPOINT API",
+            "metode_http": "GET",
+            "format_respons": "JSON",
+            "user_agent": "INSTIKI-BIFP243-Praktikum/1.0 (mahasiswa@instiki.ac.id)",
+            "timeout_detik": 20
+        },
+        "ringkasan_dataset": {
+            "judul": "Jumlah Wisatawan",
+            "kode_dataset": "DISPAREKRAF/001",
+            "cakupan": "Desa/Kelurahan",
+            "jumlah_record": 1328,
+            "jumlah_kolom": 13,
+            "rentang_tahun": "2021-2025"
+        }
+    }
+}

@@ -1,6 +1,15 @@
 # Akuisisi Data Jumlah Wisatawan Kabupaten Bandung
+## 1. Identitas Pengambil Data
 
-## 1. Deskripsi Proyek
+- Nama: **I Made Dio Kartiana Putra**
+- NIM: **2501010142**
+- Program Studi: Informatika
+- Institusi: Institut Bisnis dan Teknologi Indonesia (INSTIKI)
+- Mata Kuliah: Akuisisi dan Manajemen Data
+
+---
+
+## 2. Deskripsi Proyek
 
 Proyek ini merupakan tugas praktik individu mata kuliah **Akuisisi dan Manajemen Data (BIFP-243)**, Program Studi Informatika, Institut Bisnis dan Teknologi Indonesia (INSTIKI).
 
@@ -8,7 +17,7 @@ Tujuan proyek adalah mengambil data publik yang berkaitan dengan sektor pariwisa
 
 Dataset yang digunakan berjudul **Jumlah Wisatawan** dengan cakupan data tingkat desa/kelurahan di Kabupaten Bandung.
 
-## 2. Informasi Sumber Data
+## 3. Informasi Sumber Data
 
 | Komponen | Keterangan |
 |---|---|
@@ -27,14 +36,13 @@ Dataset yang digunakan berjudul **Jumlah Wisatawan** dengan cakupan data tingkat
 
 > Catatan: kode sumber pada endpoint adalah `DISPAREKRAF`. Silakan cocokkan nama resmi perangkat daerah/penerbit dengan keterangan yang tercantum pada halaman dataset di portal.
 
-## 3. Waktu Akuisisi
+## 4. Waktu Akuisisi
 
-- Tanggal akuisisi: **16 November 2026** (mengacu pada penamaan file CSV di notebook).
-- Jam akuisisi: **[isi jam akses sebenarnya, WITA]**.
+- Tanggal akuisisi: **16 November 2026** .
+- Jam akuisisi: **22.24**.
 
-Waktu pada bagian ini perlu disesuaikan dengan waktu ketika notebook dijalankan untuk mengambil data. Notebook saat ini belum mencatat jam akuisisi secara otomatis.
 
-## 4. Metode Akuisisi Data
+## 5. Metode Akuisisi Data
 
 Akuisisi dilakukan menggunakan Python dan library `requests`. Notebook mengirimkan HTTP GET request ke endpoint API dengan header `User-Agent` dan batas waktu permintaan (`timeout`) selama 20 detik.
 
@@ -68,7 +76,7 @@ User-Agent: INSTIKI-BIFP243-Praktikum/1.0 (mahasiswa@instiki.ac.id)
 
 Batas waktu request: `20` detik.
 
-## 5. Struktur Dataset
+## 6. Struktur Dataset
 
 Data yang diperoleh memiliki 13 kolom berikut.
 
@@ -76,7 +84,7 @@ Data yang diperoleh memiliki 13 kolom berikut.
 |---:|---|---|
 | 1 | `No` | Nomor urut record pada dataset. |
 | 2 | `Kode Wilayah` | Kode wilayah administratif. |
-| 3 | `Wilayah` | Nama wilayah yang dicatat pada dataset. |
+| 3 | `Wilayah` | Nama wilayah yang dicatat pada dataset (merujuk pada Kabupaten). |
 | 4 | `Tahun` | Tahun pencatatan data kunjungan wisatawan. |
 | 5 | `Asal Wisatawan` | Kategori asal wisatawan sebagaimana disediakan sumber. |
 | 6 | `Kode Kecamatan` | Kode kecamatan. |
@@ -90,7 +98,7 @@ Data yang diperoleh memiliki 13 kolom berikut.
 
 Beberapa nama usaha dan alamat pada respons sumber ditampilkan dengan penyamaran karakter. Nilai tersebut dipertahankan sesuai respons API dan tidak ditebak atau dilengkapi sendiri.
 
-## 6. Etika dan Batasan Pengambilan Data
+## 7. Etika dan Batasan Pengambilan Data
 
 - **Sumber publik:** data diambil dari endpoint API pada portal Satu Data Kabupaten Bandung.
 - **Pemeriksaan robots.txt:** notebook memeriksa `robots.txt` sebelum request data. Simpan output pemeriksaan tersebut sebagai bukti. Pemeriksaan `robots.txt` bukan pengganti pemeriksaan syarat penggunaan, lisensi, atau ketentuan API.
@@ -102,7 +110,7 @@ Beberapa nama usaha dan alamat pada respons sumber ditampilkan dengan penyamaran
 - **Kredensial:** endpoint yang digunakan tidak memerlukan API key pada kode notebook ini. Jangan menaruh API key atau kredensial lain di notebook/repository.
 - **Lisensi dan atribusi:** periksa ketentuan penggunaan atau lisensi yang dicantumkan pada halaman dataset/portal. Informasi lisensi spesifik belum dicantumkan di notebook, sehingga perlu diverifikasi dan ditambahkan sebelum pengumpulan.
 
-## 7. Struktur Folder Proyek
+## 8. Struktur Folder Proyek
 
 Struktur yang disarankan agar sesuai dengan ketentuan tugas:
 
@@ -121,7 +129,7 @@ rtm1_<NIM>/
 
 Nama notebook saat ini adalah `scrapping-data-bps.ipynb`. Nama tersebut dapat dipertahankan atau disesuaikan dengan nama sumber data agar lebih jelas.
 
-## 8. Cara Menjalankan Notebook
+## 9. Cara Menjalankan Notebook
 
 ### Persyaratan
 
@@ -148,7 +156,7 @@ Notebook menggunakan path relatif `../data/raw/`. Karena itu, jalankan notebook 
 os.makedirs(folder, exist_ok=True)
 ```
 
-## 9. Hasil Akuisisi
+## 10. Hasil Akuisisi
 
 Berdasarkan respons API yang diperiksa, dataset berisi **1.328 record dan 13 kolom**, dengan rentang tahun 2021 sampai 2025. Jumlah tersebut telah melampaui target minimal tugas, yaitu 100 record dan minimal 5 kolom bermakna.
 
@@ -162,16 +170,7 @@ data_kunjungan_wisata_kabupaten_bandung-16-nov-26.csv
 
 Data pada folder `data/raw/` merupakan data hasil akuisisi mentah. Jangan mengubah isi file tersebut; proses pembersihan dan transformasi dilakukan pada tahap/tugas berikutnya.
 
-## 10. Identitas Pengambil Data
 
-- Nama: **[Isi nama lengkap]**
-- NIM: **[Isi NIM]**
-- Program Studi: Informatika
-- Institusi: Institut Bisnis dan Teknologi Indonesia (INSTIKI)
-- Mata Kuliah: Akuisisi dan Manajemen Data
-- Kode Mata Kuliah: BIFP-243
-
----
 
 ## Catatan Sebelum Pengumpulan
 

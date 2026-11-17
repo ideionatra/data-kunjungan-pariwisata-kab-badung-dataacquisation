@@ -1,0 +1,11 @@
+﻿
+no,aspek,status,bukti,tindak_lanjut
+1,Legalitas sumber data,PERLU DICEK,"Menggunakan API dari website resmi Satu Data Kabupaten Bandung","Cek kembali aturan penggunaan API dan lisensi datanya"
+2,Tujuan pengambilan data,SESUAI,"Data yang diambil berupa jumlah wisatawan sehingga sesuai dengan topik pariwisata dan tugas kuliah","Jelaskan tujuan pengambilan data di README"
+3,Pencatatan sumber data,SEBAGIAN,"URL API dan nama sumber sudah dicantumkan di notebook dan README","Tambahkan waktu pengambilan data dan informasi lisensi"
+4,Aturan akses website,SEBAGIAN,"Notebook sudah memiliki kode untuk mengecek robots.txt sebelum mengambil data","Simpan hasil pengecekan robots.txt dan cek aturan penggunaan API"
+5,Data yang diambil,PERLU DICEK,"Data yang diambil terdiri dari 13 kolom sesuai dengan data yang tersedia dari API","Pastikan semua kolom memang dibutuhkan untuk tugas"
+6,Keamanan data pribadi,SEBAGIAN,"Kolom dataset berisi informasi wilayah dan usaha pariwisata, bukan data kontak pribadi","Periksa kembali isi data dan jangan ikut menyebarkan data pribadi jika ditemukan"
+7,Keamanan API key,SESUAI,"Endpoint yang digunakan tidak membutuhkan API key dan tidak ada API key di kode notebook yang diperiksa","Cek kembali kode sebelum diunggah ke repository"
+8,Batas jumlah request,SEBAGIAN,"Notebook sudah menggunakan User-Agent dan timeout 20 detik, serta hanya melakukan satu request utama untuk mengambil dataset","Gunakan jeda minimal 1 detik jika nantinya melakukan request berulang dan pastikan email User-Agent benar"
+9,Penyimpanan dan dokumentasi data,SEBAGIAN,"Data sudah disimpan dalam format CSV menggunakan Pandas","Lengkapi provenance.json dan jangan mengubah file data mentah"

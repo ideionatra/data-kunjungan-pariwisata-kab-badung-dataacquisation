@@ -122,7 +122,8 @@ rtm1_<NIM>/
 │   └── raw/
 │       └── data_kunjungan_wisata_kabupaten_bandung-16-nov-26.csv
 ├── docs/
-│   ├── provenance.json
+│   ├── provenance.json|
+│   ├── robots-txt.json|
 │   └── data_ethics_checklist.csv
 └── README.md
 ```
@@ -176,11 +177,11 @@ Data pada folder `data/raw/` merupakan data hasil akuisisi mentah. Jangan mengub
 
 Sesuai instruksi Tugas 1, README merupakan salah satu bagian dokumentasi. Lengkapi hal-hal berikut sebelum repository dikumpulkan:
 
-- [ ] Isi jam akuisisi yang sebenarnya.
-- [ ] Isi nama lengkap dan NIM.
-- [ ] Verifikasi nama resmi penerbit/perangkat daerah pada portal.
-- [ ] Cantumkan lisensi atau ketentuan penggunaan yang benar-benar berlaku.
-- [ ] Simpan bukti hasil pemeriksaan `robots.txt` dan ketentuan API.
-- [ ] Buat `docs/provenance.json` yang memuat nama berkas, ukuran, hash MD5, sumber, URL, lisensi, waktu akuisisi, serta nama/NIM pengambil.
-- [ ] Isi `docs/data_ethics_checklist.csv` berdasarkan 9 butir checklist pada Modul 04 beserta buktinya.
-- [ ] Jalankan ulang notebook dari awal dan pastikan tidak ada API key atau kredensial di dalamnya.
+- [x] Isi jam akuisisi yang sebenarnya.
+- [x] Isi nama lengkap dan NIM.
+- [x] Verifikasi nama resmi penerbit/perangkat daerah pada portal.
+- [x] Cantumkan lisensi atau ketentuan penggunaan yang benar-benar berlaku.
+- [x] Simpan bukti hasil pemeriksaan `robots.txt` dan ketentuan API.
+- [x] Buat `docs/provenance.json` yang memuat nama berkas, ukuran, hash MD5, sumber, URL, lisensi, waktu akuisisi, serta nama/NIM pengambil.
+- [x] Isi `docs/data_ethics_checklist.csv` berdasarkan 9 butir checklist pada Modul 04 beserta buktinya.
+- [x] Jalankan ulang notebook dari awal dan pastikan tidak ada API key atau kredensial di dalamnya.

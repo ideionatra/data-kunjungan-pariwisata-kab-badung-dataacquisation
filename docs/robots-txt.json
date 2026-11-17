@@ -1,0 +1,51 @@
+
+{
+    "evidence": {
+        "judul": "Bukti Pemeriksaan robots.txt dan Ketentuan API",
+        "sumber_data": "Satu Data Kabupaten Bandung",
+        "endpoint_api": "https://satudata.bandungkab.go.id/api/dataset/DISPAREKRAF/jumlah-wisatawan",
+        "metode_request": "GET",
+
+        "pemeriksaan_robots_txt": {
+            "url": "https://satudata.bandungkab.go.id/robots.txt",
+            "metode": "Mengambil robots.txt menggunakan requests dan memeriksa izin URL dengan RobotFileParser",
+            "user_agent": "INSTIKI-BIFP243-Praktikum/1.0 (mahasiswa@instiki.ac.id)",
+            "timeout_detik": 20,
+            "status_http": null,
+            "hasil_pemeriksaan": {
+                "endpoint_api_boleh_diakses": null,
+                "crawl_delay_detik": null
+            },
+            "permission": {
+                "diizinkan": [],
+                "dibatasi": [],
+                "crawl_delay": [],
+                "sitemap": [],
+                "aturan_lain": []
+            },
+            "cuplikan_robots_txt": null,
+            "catatan": "Bagian permission diisi berdasarkan seluruh aturan yang ditemukan pada robots.txt. Hasil akses endpoint menunjukkan apakah URL API dapat diakses oleh User-Agent yang digunakan."
+        },
+
+        "pemeriksaan_ketentuan_api": {
+            "halaman_portal": "https://satudata.bandungkab.go.id/",
+            "halaman_dataset": "https://satudata.bandungkab.go.id/api/dataset/DISPAREKRAF/jumlah-wisatawan",
+            "lisensi": "Belum diverifikasi",
+            "ketentuan_penggunaan": "Perlu diperiksa melalui halaman resmi portal atau informasi dataset.",
+            "atribusi_yang_diperlukan": "Mengikuti ketentuan atribusi yang tercantum pada portal atau dataset.",
+            "bukti_pendukung": [
+                "Tangkapan layar halaman dataset.",
+                "Tautan atau tangkapan layar informasi lisensi jika tersedia.",
+                "Tangkapan layar ketentuan penggunaan API jika tersedia."
+            ]
+        },
+
+        "ringkasan": {
+            "robots_txt_diperiksa_melalui_notebook": true,
+            "hasil_robots_txt_sudah_dibuktikan": false,
+            "permission_sudah_dicatat": false,
+            "ketentuan_api_sudah_diverifikasi": false,
+            "catatan": "Lengkapi nilai berdasarkan hasil pemeriksaan aktual dari notebook sebelum file dikumpulkan."
+        }
+    }
+}
